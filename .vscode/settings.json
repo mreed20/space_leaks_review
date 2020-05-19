@@ -1,0 +1,29 @@
+{
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "latex"
+    ],
+    "ltex.ignoreRuleInSentence": [
+        {
+            "rule": "MORFOLOGIK_RULE_EN_US",
+            "sentence": "@.*\\]"
+        },
+        {
+            "rule": "UPPERCASE_SENTENCE_START",
+            "sentence": "^\\Qtitle: A Review of Space Leaks in Haskell subtitle: CS490 Seminar Report, Spring 2020 author:\nMichael Reed: institute: George Mason University class: CS490 date: Spring 2020 bibliography: bibliography.bib csl: csl/acm-sig-proceedings.csl link-citations: true ...\\E$"
+        },
+        {
+            "rule": "MORFOLOGIK_RULE_EN_US",
+            "sentence": "^\\Qtitle: A Review of Space Leaks in Haskell subtitle: CS490 Seminar Report, Spring 2020 author:\nMichael Reed: institute: George Mason University class: CS490 date: Spring 2020 bibliography: bibliography.bib csl: csl/acm-sig-proceedings.csl link-citations: true ...\\E$"
+        },
+        {
+            "rule": "MORFOLOGIK_RULE_EN_US",
+            "sentence": "^\\QHaskell is pure, which means that functions in Haskell have no side effects @lipovaca_learn_2011.^This is mostly true, but Haskell does support functions with side-effects through the \\EDummy[0-9]+\\Q (read as \"input output\") monad.\\E$"
+        }
+    ],
+    "ltex.en-US.disabledRules": [
+        "EN_QUOTES"
+    ]
+}

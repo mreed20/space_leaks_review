@@ -1,0 +1,3 @@
+[submodule "pandoc-scholar"]
+	path = pandoc-scholar
+	url = https://github.com/pandoc-scholar/pandoc-scholar

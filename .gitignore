@@ -1,0 +1,9 @@
+*.aux
+*.enriched.json
+*.hi
+*.hp
+*.o
+*.prof
+*.ps
+code/meanLeak
+code/meanNoLeak
