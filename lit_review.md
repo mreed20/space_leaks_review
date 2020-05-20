@@ -11,7 +11,7 @@ link-citations: true
 
 # Abstract
 
-*Space leaks*, or *space faults*, occur when a program uses more memory than necessary [@mitchell_leaking_2013]. Space leaks are common in the Haskell programming language due to Haskell's use of lazy evaluation. Space leaks are a serious problem in Haskell programs, although heap profiling tools are satisfactory (but not exceptionally so) at locating and fixing them. This review starts by introducing Haskell, for those unfamiliar with it. The review then characterizes space leaks and attempt to classify them by type; explores remediation strategies; discusses existing techniques for locating and fixing space leaks; and finally recommends areas of future research.
+A *space leak*, or *space fault*, occurs when a program uses more memory than necessary [@mitchell_leaking_2013]. Space leaks are common in Haskell, a purely functional programming language, due to Haskell's use of *lazy evaluation*. While space leaks are a serious problem for Haskell programmers, heap profiling tools are often satisfactory at locating and fixing them. This review introduces Haskell for those unfamiliar; describes space leaks and discusses why and how they occur; analyzes existing approaches to find and fix leaks; and recommends future work, such as using *explicit programming* to explicitly document the leak-finding process.
 
 # Introduction to Haskell
 
@@ -446,7 +446,7 @@ A weak pointer is a reference to some data which is not considered by the garbag
 
 3. Attempt to dereference the weak pointer by calling `deRefWeak`. If dereferencing fails, then `v` has been collected. Otherwise, `v` is still live, presumably because some expression holds a reference to `v`.
 
-This approach can be used in automated regression testing to ensure that space faults do not reappear after being fixed [@marlow_fixing_2018].
+This approach can be used in automated regression testing to ensure that space leaks do not reappear after being fixed [@marlow_fixing_2018].
 
 # Future work
 
